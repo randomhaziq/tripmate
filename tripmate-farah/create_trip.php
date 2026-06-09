@@ -11,12 +11,8 @@ include __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<section class="card role-notice is-hidden" id="create-trip-member-note">
-  <p>Only the organizer can create or edit the shared trip space. Member view shows this page as read-only for presentation purposes.</p>
-</section>
-
 <section class="card form-card">
-  <form class="stack-form" action="invite.php" method="get" id="create-trip-form">
+  <form class="stack-form" action="invite.php" method="get">
     <div class="form-grid">
       <label>
         <span>Trip name</span>
@@ -40,7 +36,7 @@ include __DIR__ . '/includes/header.php';
       </label>
     </div>
     <div class="form-actions">
-      <button type="submit" class="btn btn-primary" id="create-trip-submit">Continue to Invite Friends</button>
+      <button type="submit" class="btn btn-primary">Continue to Invite Friends</button>
     </div>
   </form>
 </section>

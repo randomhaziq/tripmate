@@ -21,7 +21,6 @@ include __DIR__ . '/includes/header.php';
       <label><span>Category</span><input type="text" id="expense-category" required></label>
       <label><span>Split method</span><input type="text" id="expense-split" value="Split equally among 5 members"></label>
     </div>
-    <p class="form-note">Organizer can monitor all expenses. Members can add expenses and remove only their own entries in this prototype.</p>
     <button type="submit" class="btn btn-primary">Add Expense</button>
   </form>
 </section>

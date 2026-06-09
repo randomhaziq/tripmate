@@ -22,36 +22,16 @@ include __DIR__ . '/includes/header.php';
 </section>
 
 <section class="member-grid">
-  <article class="card balance-card positive"><h3>Amirah</h3><p>is owed RM14</p></article>
-  <article class="card balance-card positive"><h3>Hafiz</h3><p>is owed RM166</p></article>
-  <article class="card balance-card positive"><h3>Liyana</h3><p>is owed RM116</p></article>
-  <article class="card balance-card negative"><h3>Daniel</h3><p>owes RM134</p></article>
-  <article class="card balance-card negative"><h3>Sara</h3><p>owes RM134</p></article>
+  <article class="card balance-card"><h3>Amirah</h3><p>Should receive RM14</p></article>
+  <article class="card balance-card"><h3>Hafiz</h3><p>Should receive RM166</p></article>
+  <article class="card balance-card"><h3>Liyana</h3><p>Should receive RM116</p></article>
+  <article class="card balance-card"><h3>Daniel</h3><p>Needs to pay RM134</p></article>
+  <article class="card balance-card"><h3>Sara</h3><p>Needs to pay RM134</p></article>
 </section>
 
 <section class="card">
-  <h3>Who owes who</h3>
-  <div class="settlement-list">
-    <div class="settlement-item">
-      <p>Daniel owes Hafiz RM83</p>
-      <button class="btn btn-secondary settle-btn">Mark as Settled</button>
-      <span class="settlement-status">Pending</span>
-    </div>
-    <div class="settlement-item">
-      <p>Sara owes Hafiz RM83</p>
-      <button class="btn btn-secondary settle-btn">Mark as Settled</button>
-      <span class="settlement-status">Pending</span>
-    </div>
-    <div class="settlement-item">
-      <p>Daniel owes Liyana RM51</p>
-      <button class="btn btn-secondary settle-btn">Mark as Settled</button>
-      <span class="settlement-status">Pending</span>
-    </div>
-    <div class="settlement-item">
-      <p>Sara owes Liyana RM51</p>
-      <button class="btn btn-secondary settle-btn">Mark as Settled</button>
-      <span class="settlement-status">Pending</span>
-    </div>
-  </div>
+  <h3>Who needs to pay</h3>
+  <p class="form-note">Grouped by payer so the settlement path is easier to understand at a glance.</p>
+  <div id="balance-groups" class="stack-grid"></div>
 </section>
 <?php include __DIR__ . '/includes/footer.php'; ?>

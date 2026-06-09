@@ -13,15 +13,15 @@ include __DIR__ . '/includes/header.php';
 <section class="settings-grid">
   <article class="card setting-card">
     <div><h3>Closed group only</h3><p>Only invited members can access the trip space.</p></div>
-    <button class="toggle-btn is-on is-disabled" disabled>On</button>
+    <span class="toggle-label on">On</span>
   </article>
   <article class="card setting-card">
     <div><h3>Anonymous voting</h3><p>Hide who voted on each activity when enabled.</p></div>
-    <button class="toggle-btn is-off" data-setting="anonymousVoting" data-state="off">Off</button>
+    <button class="toggle-btn is-off" data-state="off">Off</button>
   </article>
   <article class="card setting-card">
     <div><h3>Archive trip after 30 days</h3><p>Preserve the trip as read-only after the event ends.</p></div>
-    <button class="toggle-btn is-on is-disabled" disabled>On</button>
+    <span class="toggle-label on">On</span>
   </article>
   <article class="card setting-card">
     <div><h3>Delete trip data</h3><p>Clear locally stored prototype interactions for this browser.</p></div>
@@ -29,11 +29,11 @@ include __DIR__ . '/includes/header.php';
   </article>
   <article class="card setting-card">
     <div><h3>Receipt visibility</h3><p>Only members can view uploaded receipts and payment records.</p></div>
-    <button class="toggle-btn is-on is-disabled" disabled>Members only</button>
+    <span class="toggle-label on">Members only</span>
   </article>
   <article class="card setting-card">
-    <div><h3>Location sharing</h3><p>Optional live location sharing stays off by default and should be enabled only when members want to share trip safety updates.</p></div>
-    <button class="toggle-btn is-off" data-setting="locationSharing" data-state="off">Off</button>
+    <div><h3>Location sharing</h3><p>Optional live location sharing stays off by default.</p></div>
+    <button class="toggle-btn is-off" data-state="off">Off</button>
   </article>
 </section>
 

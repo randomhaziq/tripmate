@@ -13,14 +13,6 @@ include __DIR__ . '/includes/header.php';
 
 <section class="dashboard-grid">
   <article class="card metric-card">
-    <h3>Current Role</h3>
-    <div class="metric-list">
-      <div><span>Viewing as</span><strong id="dashboard-role-label">Organizer</strong></div>
-      <div><span>Demo member</span><strong id="dashboard-user-label">Amirah</strong></div>
-      <div><span>Permissions</span><strong id="dashboard-permission-label">Manage trip</strong></div>
-    </div>
-  </article>
-  <article class="card metric-card">
     <h3>Trip Overview</h3>
     <div class="metric-list">
       <div><span>Total members</span><strong>5</strong></div>
@@ -61,11 +53,6 @@ include __DIR__ . '/includes/header.php';
     <a class="text-link" href="balances.php">Open balance dashboard</a>
   </article>
   <article class="card">
-    <h3>Safety Snapshot</h3>
-    <p>Location sharing is optional and off by default. Members can share a last known location check-in if the group needs help coordinating or finding someone.</p>
-    <a class="text-link" href="trip_space.php">Open trip safety tracker</a>
-  </article>
-  <article class="card">
     <h3>Recent Activity Preview</h3>
     <ul class="feed-preview">
       <li>🗳️ Amirah voted for Cenang Beach</li>
@@ -73,10 +60,6 @@ include __DIR__ . '/includes/header.php';
       <li>💬 Sara commented on Island Hopping</li>
     </ul>
     <a class="text-link" href="activity_feed.php">View full feed</a>
-  </article>
-  <article class="card">
-    <h3>Permission Summary</h3>
-    <p id="role-permission-copy">Organizer can invite members, assign roles, approve plans, and manage trip settings.</p>
   </article>
 </section>
 

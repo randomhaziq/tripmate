@@ -7,6 +7,7 @@ $mainNav = [
     'expenses.php' => 'Expenses',
     'balances.php' => 'Balances',
     'activity_feed.php' => 'Activity Feed',
+    'location.php' => 'Location Tracker',
     'privacy.php' => 'Privacy/Settings',
 ];
 ?>
@@ -19,24 +20,23 @@ $mainNav = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Leaflet Map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
 <body data-page="<?php echo htmlspecialchars($currentPage); ?>">
   <div class="site-shell">
     <header class="site-header">
-      <div class="header-top">
-        <a class="brand-mark" href="index.php">
-          <span class="brand-icon">✈️</span>
-          <div>
-            <strong>TripMate</strong>
-            <small>Collaborative Trip Planner</small>
-          </div>
-        </a>
-        <div class="header-tools">
-          <span id="role-badge" class="role-badge">Organizer View</span>
-          <a class="btn btn-secondary btn-small" href="index.php">Switch Role</a>
+      <a class="brand-mark" href="index.php">
+        <span class="brand-icon">✈️</span>
+        <div>
+          <strong>TripMate</strong>
+          <small>Collaborative Trip Planner</small>
         </div>
-      </div>
+      </a>
       <?php if (empty($setupPage)) : ?>
         <nav class="main-nav" aria-label="Primary">
           <?php foreach ($mainNav as $file => $label) : ?>

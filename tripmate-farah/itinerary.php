@@ -17,10 +17,15 @@ include __DIR__ . '/includes/header.php';
       <label><span>Activity name</span><input type="text" id="activity-name" required></label>
       <label><span>Location</span><input type="text" id="activity-location" required></label>
       <label><span>Estimated cost</span><input type="text" id="activity-cost" placeholder="RM30"></label>
-      <label><span>Proposed by</span><input type="text" id="activity-proposer" required></label>
-      <label><span>Mock photo attachment</span><input type="file" id="activity-photo" accept="image/*"></label>
-    </div>
-    <p class="form-note">Photo upload is simulated for presentation only. TripMate stores the selected file name locally and shows it as an attachment preview. Up to 5 group members can vote on each suggestion.</p>
+<label>
+  <span>Proposed by</span>
+  <input type="text" id="activity-proposer" required>
+</label>
+
+<label>
+  <span>Activity Picture</span>
+  <input type="file" id="activity-image" accept="image/*">
+</label>    </div>
     <button type="submit" class="btn btn-primary">Add Activity</button>
   </form>
 </section>

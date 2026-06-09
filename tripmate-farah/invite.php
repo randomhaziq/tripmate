@@ -11,10 +11,6 @@ include __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<section class="card role-notice is-hidden" id="invite-member-note">
-  <p>Only the organizer can send invites and assign member roles. In member view, this page becomes read-only.</p>
-</section>
-
 <section class="dashboard-grid">
   <article class="card invite-card">
     <h3>Trip Invite</h3>
@@ -26,21 +22,6 @@ include __DIR__ . '/includes/header.php';
       <span class="label">Mock invite link</span>
       <p class="mock-link">http://localhost/tripmate/join/TRIP-LGK-2026</p>
     </div>
-    <form id="invite-form" class="stack-form compact-form">
-      <label>
-        <span>Invite member name</span>
-        <input type="text" id="invite-member-name" placeholder="e.g. Farah">
-      </label>
-      <label>
-        <span>Assign role</span>
-        <select id="invite-member-role">
-          <option value="Member">Member</option>
-          <option value="Budget Tracker">Budget Tracker</option>
-          <option value="Activity Contributor">Activity Contributor</option>
-        </select>
-      </label>
-      <button type="submit" class="btn btn-secondary" id="invite-member-submit">Add Mock Member</button>
-    </form>
     <div class="button-row">
       <button class="btn btn-secondary copy-trigger" data-copy="http://localhost/tripmate/join/TRIP-LGK-2026">Copy Invite Link</button>
       <a class="btn btn-primary" href="dashboard.php">Go to Dashboard</a>
@@ -49,7 +30,13 @@ include __DIR__ . '/includes/header.php';
 
   <article class="card">
     <h3>Current Members</h3>
-    <ul class="member-list" id="invite-member-list"></ul>
+    <ul class="member-list">
+      <li><strong>Amirah</strong><span>Organizer</span></li>
+      <li><strong>Hafiz</strong><span>Budget Tracker</span></li>
+      <li><strong>Liyana</strong><span>Activity Contributor</span></li>
+      <li><strong>Daniel</strong><span>Member</span></li>
+      <li><strong>Sara</strong><span>Member</span></li>
+    </ul>
   </article>
 </section>
 <?php include __DIR__ . '/includes/footer.php'; ?>

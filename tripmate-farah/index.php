@@ -10,10 +10,8 @@ include __DIR__ . '/includes/header.php';
     <p class="tagline">Plan together. Split fairly. Travel stress-free.</p>
     <p class="hero-description">A closed-group trip planning and expense sharing system for friends.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary btn-large role-picker" data-set-role="organizer" href="create_trip.php">Continue as Organizer</a>
-      <a class="btn btn-secondary btn-large role-picker" data-set-role="member" href="dashboard.php">Continue as Member</a>
+      <a class="btn btn-primary btn-large" href="create_trip.php">Create Trip Space</a>
     </div>
-    <p class="form-note">Prototype role selection only. The organizer creates and manages the trip, while members can vote, comment, and contribute.</p>
   </div>
   <div class="hero-visual card">
     <div class="hero-frame">
@@ -21,7 +19,6 @@ include __DIR__ . '/includes/header.php';
         <span></span><span></span><span></span>
       </div>
       <div class="hero-screen">
-        <div class="stamp">Prototype</div>
         <h2>Weekend Escape</h2>
         <p>Langkawi, Malaysia</p>
         <div class="hero-pills">
